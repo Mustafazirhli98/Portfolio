@@ -1,10 +1,28 @@
+'use client'
+
 import PROJECT_DATA from "./../lib/data/data"
 import ProjectList from "../components/projectOverlay/ProjectList"
+import Link from "next/link"
+import styles from "./projects.module.css"
+import { usePathname } from "next/navigation"
+
 export default function Projects() {
 
+    const pathname = usePathname()
+    console.log(pathname)
     return (
         <div className="h-screen p-10">
-            <h1 className="text-center bg-red-200">Home / About me / Projects</h1>
+            <ul className={`${styles.breadcrumps} text-center`}>
+                <li>
+                    <Link href={"/"}>Home</Link>
+                </li>
+                <li>
+                    <Link href={"/aboutPage"}>About me</Link>
+                </li>
+                <li className={pathname === "/projectsPage" && styles.activeLink}>
+                    <Link href={"/projectsPage"}>Projects</Link>
+                </li>
+            </ul>
             <div>
                 {
                     PROJECT_DATA.map(item => (

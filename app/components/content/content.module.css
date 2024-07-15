@@ -12,6 +12,11 @@
     transition: background-size 0.3s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
+.container {
+    @apply w-[50%] h-full;
+    @apply flex justify-center items-center
+}
+
 .contentLink {
     @apply flex justify-center items-center;
     @apply text-gray-300 hover:text-black;

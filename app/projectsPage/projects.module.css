@@ -1,0 +1,21 @@
+.breadcrumps {
+    padding: 10px;
+}
+
+.breadcrumps li {
+    display: inline-block;
+    margin: 0 4px 0 4px;
+}
+
+.breadcrumps li::after {
+    content: "/";
+}
+
+
+.breadcrumps li:last-child::after {
+    content: "";
+}
+
+.activeLink {
+    text-decoration: underline;
+}
