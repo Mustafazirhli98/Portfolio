@@ -1,0 +1,13 @@
+.projectIMG {
+    background-image: url(/projectsIMG.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.aboutMeIMG {
+    background-image: url(/aboutmeIMG.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out;
+}
