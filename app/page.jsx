@@ -4,8 +4,8 @@ import styles from "./components/content/content.module.css"
 export default function Home() {
   return (
     <div className="flex h-screen">
-      <ContentOverview type={"projects"} link={"/projectsPage"} img={styles.aboutMeIMG} />
-      <ContentOverview type={"aboutMe"} link={"/aboutPage"} img={styles.projectIMG} />
+      <ContentOverview type={"About me"} link={"/aboutPage"} img={styles.aboutMeIMG} />
+      <ContentOverview type={"Projects"} link={"/projectsPage"} img={styles.projectIMG} />
     </div>
   );
 }

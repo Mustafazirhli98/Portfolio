@@ -11,3 +11,9 @@
     background-repeat: no-repeat;
     transition: background-size 0.3s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out;
 }
+
+.contentLink {
+    @apply flex justify-center items-center;
+    @apply text-gray-300 hover:text-black;
+    @apply text-4xl h-[350px] hover:h-[400px] w-[550px] hover:w-[600px];
+}
