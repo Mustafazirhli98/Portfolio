@@ -14,8 +14,6 @@ const PROJECT_DATA = [
         { _id: 14, _name: "Age Calculator", _lang: "Javascript", _img: "image", _githubLink: "https://github.com/Mustafazirhli98/FrontendMentor-2-AgeCalculator" },
         { _id: 16, _name: "Quiz App", _lang: "Javascript", _img: "image", _githubLink: "https://github.com/Mustafazirhli98/Quiz-App" }
     ]),
-    new PROJECT_MODEL("React/Typescript", [
-    ]),
     new PROJECT_MODEL("React", [
         { _id: 6, _name: "Translator", _lang: "Typescript", _img: "image", _githubLink: "https://github.com/Mustafazirhli98/translator-typescript", _appLink: "https://translator-typescript.vercel.app/" },
         { _id: 7, _name: "Sky Walking Shoes", _lang: "Javascript", _img: "image", _githubLink: "https://github.com/Mustafazirhli98/sky-walking-shoes", _appLink: "https://sky-walking-shoes.vercel.app/" },

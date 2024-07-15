@@ -1,4 +1,4 @@
-import ContentOverview from "./components/content/contentOverview";
+import ContentOverview from "./components/content/ContentOverview";
 import styles from "./components/content/content.module.css"
 
 export default function Home() {
