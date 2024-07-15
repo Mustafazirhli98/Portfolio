@@ -1,19 +1,9 @@
-class PROJECT_MODEL {
+export class PROJECT_MODEL {
     constructor(
-        id,
-        name,
         tech,
-        img,
-        githubLink,
-        appLink
+        projects
     ) {
-        this.id = id;
-        this.name = name;
-        this.tech = tech;
-        this.img = img;
-        this.githubLink = githubLink;
-        this.appLink = appLink
+        this.categoryName = tech;
+        this.projects = projects;
     }
 }
-
-export default PROJECT_MODEL
