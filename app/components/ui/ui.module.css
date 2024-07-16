@@ -5,10 +5,13 @@
 .breadcrumps li {
     display: inline-block;
     margin: 0 4px 0 4px;
+    color: #bdc3c7
 }
+
 
 .breadcrumps li::after {
     content: "/";
+    color: #ecf0f1;
 }
 
 
@@ -18,4 +21,5 @@
 
 .activeLink {
     text-decoration: underline;
+    color: #ecf0f1 !important;
 }

@@ -13,8 +13,8 @@
 }
 
 .container {
-    @apply w-[50%] h-full;
-    @apply flex justify-center items-center
+    @apply lg:w-[50%] h-full p-5;
+    @apply flex justify-center items-center bg-red-400;
 }
 
 .contentLink {
