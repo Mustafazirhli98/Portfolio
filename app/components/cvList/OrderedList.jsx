@@ -50,7 +50,7 @@ export default function OrderedList({ dataType, data }) {
                             {
                                 data.map((education, index) => (
                                     <ol key={education.id}
-                                        className={`mt-3 lg:mt-5 mb-2 lg:mb-0 w-full lg:w-[50%] lg:pr-5 text-sm lg:text-base ${index % 2 == 1 && "pl-5"}`}
+                                        className={`mt-3 lg:mt-5 mb-2 lg:mb-0 w-full lg:w-[50%] lg:pr-5 text-sm lg:text-base ${index % 2 == 1 && "lg:pl-5"}`}
                                         style={{ color: COLOR_PALETTE.dark }}>
                                         <li className="lg:w-[50%] text-base lg:text-lg font-semibold" style={{ color: COLOR_PALETTE.blue }}>{education.college}</li>
                                         <li className="w-full flex justify-between font-semibold text-sm lg:text-base">
