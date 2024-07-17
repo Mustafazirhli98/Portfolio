@@ -27,7 +27,7 @@ export default function Home() {
     <div className="h-screen flex flex-col justify-center lg:flex-row" style={{ backgroundColor: COLOR_PALETTE.light }}>
       <ContentOverview type={"About me"} link={"/aboutPage"} img={styles.aboutMeIMG} />
       <ContentOverview type={"Projects"} link={"/projectsPage"} img={styles.projectIMG} />
-      <MdKeyboardArrowRight className="invisible lg:visible absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-10 h-10"
+      <MdKeyboardArrowRight className="invisible lg:visible absolute top-[50%] translate-x-[-50%] translate-y-[-50%] w-14 h-14"
         style={{ transform: `rotate(${angle}deg)` }}
       />
 
@@ -37,3 +37,4 @@ export default function Home() {
 
 
 //about page'i clean'e çek. Module dosyası oluştur. Listeleri teke düşür.
+// projects sayfasını animasyonla başlat.

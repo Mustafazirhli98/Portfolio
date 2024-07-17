@@ -11,7 +11,7 @@ export default function AboutMe() {
                 <h1 className="text-2xl lg:text-4xl text-center font-bold" style={{ color: COLOR_PALETTE.blue }}>Mustafa Zırhlı</h1>
                 <h5 className="text-l lg:text-xl text-center " style={{ color: COLOR_PALETTE.turqoise }}>Frontend Web/Mobile Developer</h5>
                 <div className="content-container p-5">
-                    <div className="">
+                    <div className="lg:p-5">
                         <h4 className="text-lg lg:text-xl font-semibold border-b border-b-[#95a5a6] pl-0 p-2 " style={{ color: COLOR_PALETTE.blue }}>Summary</h4>
                         <div>
                             {/* image */}
