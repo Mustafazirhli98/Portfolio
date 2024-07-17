@@ -5,7 +5,7 @@ import ProjectList from "../components/projectsOverlay/ProjectList"
 export default function Projects() {
 
     return (
-        <div className="h-screen p-10">
+        <div className="h-screen p-3 lg:p-10">
             <Breadcrumps />
             <h1 className="text-4xl text-center">PROJECTS</h1>
             <div>
