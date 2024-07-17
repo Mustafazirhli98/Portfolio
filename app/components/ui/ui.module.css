@@ -1,17 +1,21 @@
 .breadcrumps {
     padding: 10px;
+    color: #353535;
+    @apply text-center lg:text-start
 }
 
 .breadcrumps li {
     display: inline-block;
-    margin: 0 4px 0 4px;
-    color: #bdc3c7
+    margin: 0 5px 0 5px;
+    position: relative;
 }
 
 
 .breadcrumps li::after {
     content: "/";
-    color: #ecf0f1;
+    color: #353535;
+    position: absolute;
+    right: -7px;
 }
 
 
@@ -21,5 +25,5 @@
 
 .activeLink {
     text-decoration: underline;
-    color: #ecf0f1 !important;
+    color: #3c6e71
 }

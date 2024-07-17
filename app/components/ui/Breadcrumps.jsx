@@ -3,6 +3,7 @@
 import Link from "next/link";
 import styles from "./ui.module.css"
 import { usePathname } from "next/navigation";
+import COLOR_PALETTE from "../../lib/constants/colorPalette";
 
 export default function Breadcrumps() {
     const pathname = usePathname();
