@@ -35,6 +35,6 @@ export const CV_LIST_DATA = new CV_LIST_MODEL(
             description: "YetGen is a 12-week 21st Century Competency Training Program that includes courses such as Effective Presentation Techniques, Teamwork, Career Planning, Excel, Information/Media/Financial Literacy, Social Innovation, and the EntreGen week, where we create our own entrepreneurial project at the end of the program.",
             departmant:"Member",
             year: "2021"
-        }
+        },
     ]
 )
