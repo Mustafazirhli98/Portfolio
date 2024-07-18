@@ -3,7 +3,6 @@
 import Link from "next/link";
 import styles from "./ui.module.css"
 import { usePathname } from "next/navigation";
-import COLOR_PALETTE from "../../lib/constants/colorPalette";
 
 export default function Breadcrumps() {
     const pathname = usePathname();
@@ -13,10 +12,10 @@ export default function Breadcrumps() {
             <li>
                 <Link href={"/"}>Home</Link>
             </li>
-            <li className={pathname === "/aboutPage" && styles.activeLink}>
+            <li className={pathname === "/aboutPage" ? styles.activeLink : ""}>
                 <Link href={"/aboutPage"}>About me</Link>
             </li>
-            <li className={pathname === "/projectsPage" && styles.activeLink}>
+            <li className={pathname === "/projectsPage" ? styles.activeLink : ""}>
                 <Link href={"/projectsPage"}>Projects</Link>
             </li>
         </ul >

@@ -1,0 +1,34 @@
+.outerContainer {
+    @apply h-full p-3 lg:p-8
+}
+
+.innerContainer {
+    @apply mt-5
+}
+
+.contentContainer {
+    @apply p-5 lg:pt-10
+}
+
+.personalInfo {
+    @apply lg:p-5
+}
+
+.summaryContainer {
+    @apply flex items-center justify-between;
+    @apply border-b border-b-[#95a5a6];
+    @apply pl-0 p-2;
+}
+
+.contactList {
+    @apply hidden lg:flex
+}
+
+.contactList li {
+    @apply flex justify-center items-center;
+    @apply mr-5 text-xs
+}
+
+.contactList li:last-child {
+    @apply mr-0
+}

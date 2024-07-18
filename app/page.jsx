@@ -1,10 +1,9 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import ContentOverview from "./components/content/ContentOverview";
-import styles from "./components/content/content.module.css"
 import { MdKeyboardArrowRight } from "react-icons/md";
-import COLOR_PALETTE from "./lib/constants/colorPalette";
+import ContentOverview from "./../components/content/ContentOverview"
+import COLOR_PALETTE from "../lib/constants/colorPalette";
 
 export default function Home() {
 
@@ -24,13 +23,12 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="h-screen flex flex-col justify-center lg:flex-row" style={{ backgroundColor: COLOR_PALETTE.light }}>
-      <ContentOverview type={"About me"} link={"/aboutPage"} img={styles.aboutMeIMG} />
-      <ContentOverview type={"Projects"} link={"/projectsPage"} img={styles.projectIMG} />
-      <MdKeyboardArrowRight className="invisible lg:visible absolute top-[50%] translate-x-[-50%] translate-y-[-50%] w-14 h-14"
+    <div className="root-container" style={{ backgroundColor: COLOR_PALETTE.light }}>
+      <ContentOverview type={"About me"} link={"/aboutPage"} boxColor={COLOR_PALETTE.blue} />
+      <ContentOverview type={"Projects"} link={"/projectsPage"} boxColor={COLOR_PALETTE.turqoise} />
+      <MdKeyboardArrowRight className="tracker-arrow"
         style={{ transform: `rotate(${angle}deg)` }}
       />
-
     </div>
   );
 }

@@ -1,6 +1,6 @@
-import Breadcrumps from "./../components/ui/BreadCrumps"
-import PROJECT_DATA from "../lib/data/projectData"
-import ProjectList from "../components/projectsOverlay/ProjectList"
+import Breadcrumps from "../../components/ui/Breadcrumps"
+import PROJECT_DATA from "../../lib/data/projectData"
+import ProjectList from "../../components/projectsOverlay/ProjectList"
 
 export default function Projects() {
 

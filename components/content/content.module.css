@@ -1,11 +1,3 @@
-.projectIMG {
-    background-color: #3c6e71;
-}
-
-.aboutMeIMG {
-    background-color: #284b63;
-}
-
 .container {
     @apply lg:w-[50%] p-5;
     @apply flex justify-center m-5 items-center;
@@ -13,12 +5,8 @@
 
 .contentLink {
     @apply flex justify-center items-center rounded-lg;
-    @apply text-gray-300;
+    @apply text-gray-300 hover:text-white;
     @apply text-4xl w-[90%] h-[150px] lg:h-[350px] lg:hover:h-[400px] lg:w-[550px] lg:hover:w-[600px];
     @apply hover:shadow-2xl;
     transition: height 0.3s ease-in-out, width 0.3s ease-in-out, shadow 0.3s ease;
-}
-
-.contentLink:hover {
-    color: #fff
 }
