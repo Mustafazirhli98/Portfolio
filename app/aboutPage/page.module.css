@@ -17,16 +17,16 @@
 .summaryContainer {
     @apply flex items-center justify-between;
     @apply border-b border-b-[#95a5a6];
-    @apply pl-0 p-2;
+    @apply pl-0 p-2 pr-0;
 }
 
 .contactList {
-    @apply hidden lg:flex
+    @apply pt-2 lg:p-0
 }
 
 .contactList li {
-    @apply flex justify-center items-center;
-    @apply mr-5 text-xs
+    @apply flex lg:justify-center lg:items-center;
+    @apply mr-5 p-1 lg:p-0 text-xs
 }
 
 .contactList li:last-child {
