@@ -17,6 +17,9 @@ h1 {
 h5 {
     @apply text-lg lg:text-xl
 }
+p {
+    @apply text-sm lg:text-base 
+}
 }
 
 @layer components {

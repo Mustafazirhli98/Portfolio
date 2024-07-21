@@ -34,5 +34,4 @@ export default function Home() {
 }
 
 
-//about page'i clean'e çek. Module dosyası oluştur. Listeleri teke düşür.
 // projects sayfasını animasyonla başlat.

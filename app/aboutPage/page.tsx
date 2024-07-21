@@ -20,14 +20,14 @@ export default function AboutMe() {
                     <h1 className="text-center font-bold" style={{ color: COLOR_PALETTE.blue }}>{infoPersonal.name}</h1>
                     <h5 className="text-center" style={{ color: COLOR_PALETTE.turqoise }}>{infoPersonal.position}</h5>
                     <div className={styles.contentContainer}>
-                        <div className={styles.personalInfo}>
-                            <div className={styles.summaryContainer}>
+                        <div className={styles.section1}>
+                            <div className={styles.summaryTitle}>
                                 <h5 className="font-semibold" style={{ color: COLOR_PALETTE.blue }}>Summary</h5>
-                                <ContactInfo visibility={"hidden lg:flex"}/>
+                                <ContactInfo visibility={"hidden lg:flex"} />
                             </div>
-                            <p className="text-sm lg:text-base mt-5" style={{ color: COLOR_PALETTE.dark }}>{infoPersonal.summaryText}</p>
+                            <p className="mt-5" style={{ color: COLOR_PALETTE.dark }}>{infoPersonal.summaryText}</p>
                         </div>
-                        <div className="flex flex-col lg:flex-row">
+                        <div className={styles.section2}>
                             <ListOverlay dataType={"skills"} data={CV_LIST_DATA.skills} />
                             <ListOverlay dataType={"experience"} data={CV_LIST_DATA.experience} />
                         </div>

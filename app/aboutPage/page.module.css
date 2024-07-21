@@ -10,14 +10,18 @@
     @apply p-5 lg:pt-10
 }
 
-.personalInfo {
+.section1 {
     @apply lg:p-5
 }
 
-.summaryContainer {
+.summaryTitle {
     @apply flex items-center justify-between;
     @apply border-b border-b-[#95a5a6];
     @apply pl-0 p-2 pr-0;
+}
+
+.section2 {
+    @apply flex flex-col lg:flex-row
 }
 
 .contactList {
