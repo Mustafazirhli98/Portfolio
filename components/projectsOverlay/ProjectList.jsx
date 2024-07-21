@@ -1,11 +1,11 @@
-import ProjectCard from "./ProjectCard"
+import ListItem from "./ListItem"
 
 export default function ProjectList({ projects }) {
     return (
-        <div className="flex items-center flex-wrap">
+        <div className="flex items-center flex-wrap bg-blue-200 p-10">
             {
                 projects.map(item => (
-                    <ProjectCard key={item._id} projectData={item} />
+                    <ListItem key={item._id} projectData={item} />
                 ))
             }
         </div>

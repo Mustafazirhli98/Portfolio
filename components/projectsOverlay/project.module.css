@@ -1,0 +1,8 @@
+.itemContainer {
+    display: flex;
+    align-items: center;
+}
+
+.itemContainer:nth-child(2n) {
+    flex-direction: row-reverse;
+}
