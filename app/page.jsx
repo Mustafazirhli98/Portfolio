@@ -24,14 +24,24 @@ export default function Home() {
 
   return (
     <div className="root-container" style={{ backgroundColor: COLOR_PALETTE.light }}>
-      <ContentOverview type={"About me"} link={"/aboutPage"} boxColor={COLOR_PALETTE.blue} />
-      <ContentOverview type={"Projects"} link={"/projectsPage"} boxColor={COLOR_PALETTE.turqoise} />
+      <ContentOverview type={"About me"} link={"/aboutPage"} boxColor={COLOR_PALETTE.blue100} textColor={COLOR_PALETTE.blue800}/>
+      <ContentOverview type={"Projects"} link={"/projectsPage"} boxColor={COLOR_PALETTE.blue400} textColor={COLOR_PALETTE.white} />
       <MdKeyboardArrowRight className="tracker-arrow"
-        style={{ transform: `rotate(${angle}deg)` }}
+        style={{ transform: `rotate(${angle}deg)`, color: COLOR_PALETTE.blue800 }}
       />
     </div>
   );
 }
 
 
-// projects sayfasını animasyonla başlat.
+//ABOUT
+//color pallette'i css'e taşı, tüm stil özelliklerini classname, tailwind ve css dosyalarından ver, ortak css kurallarını global css'e işle.
+//style proplarından kurtul
+
+//PROJECTS
+// Projelerin görsellerini küçült ve hazırla
+// Her bir projenin (eğe varsa) birden fazla fotoğrafını yükle ve seçtiğinde dinamik olarak resmi değiştir. (alternatif resimler ana resmin altında küçük kutucuk şeklinde olacak.)
+// Projelerin her birinde kullanılan teknolojileri icon olarak veya yazı olarak alanlarında belirt.
+// Responsive design'ı hazırla.
+// Sayfa açılış ve kaydırışta animasyon ekle.
+// Animasyon işini About me ve homePage'e de uyarla.

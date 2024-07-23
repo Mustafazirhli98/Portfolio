@@ -10,28 +10,36 @@
 
 
 @layer base {
-h1 {
-    @apply text-2xl lg:text-4xl
-}
+    h1 {
+        @apply text-2xl lg:text-4xl
+    }
 
-h5 {
-    @apply text-lg lg:text-xl
-}
-p {
-    @apply text-sm lg:text-base 
-}
+    h5 {
+        @apply text-lg lg:text-xl
+    }
+
+    p {
+        @apply text-sm lg:text-base;
+        @apply text-[#282521]
+    }
+
+    span.skill {
+        @apply text-[#282521];
+    }
 }
 
 @layer components {
-/* app segment page styles */
-.root-container {
-    @apply h-screen flex flex-col lg:flex-row justify-center;
-}
 
-.tracker-arrow {
-    @apply w-14 h-14;
-    @apply invisible lg:visible;
-    @apply absolute top-[50%] translate-x-[-50%] translate-y-[-50%];
-}
-/* app segment page styles */
+    /* app segment page styles */
+    .root-container {
+        @apply h-screen flex flex-col lg:flex-row justify-center;
+    }
+
+    .tracker-arrow {
+        @apply w-14 h-14;
+        @apply invisible lg:visible;
+        @apply absolute top-[50%] translate-x-[-50%] translate-y-[-50%];
+    }
+
+    /* app segment page styles */
 }

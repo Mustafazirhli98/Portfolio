@@ -1,41 +1,31 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoMail } from "react-icons/io5";
-import Link from "next/link";
-
 import { infoPersonal } from "./../../lib/constants/InfoPersonal";
 import COLOR_PALETTE from "../../lib/constants/colorPalette";
-import { CV_LIST_DATA } from "./../../lib/data/cvListData";
 import Breadcrumps from "../../components/ui/BreadCrumps";
-import ListOverlay from "../../components/cvList/ListOverlay";
-import ContactInfo from "./../../components/ContactInfo"
+import Image from "next/image";
+import { EXPERIENCES } from "../../lib/data/experienceData";
 import Footer from "./../../components/ui/Footer"
-import styles from "./page.module.css";
+import Skills from "../../components/list/Skills";
+import Experience from "../../components/list/Experience";
 
 export default function AboutMe() {
     return (
         <>
-            <div className={styles.outerContainer} style={{ backgroundColor: COLOR_PALETTE.light }}>
+            <div className="w-full p-10" style={{ backgroundColor: COLOR_PALETTE.white }}>
                 <Breadcrumps />
-                <div className={styles.innerContainer}>
-                    <h1 className="text-center font-bold" style={{ color: COLOR_PALETTE.blue }}>{infoPersonal.name}</h1>
-                    <h5 className="text-center" style={{ color: COLOR_PALETTE.turqoise }}>{infoPersonal.position}</h5>
-                    <div className={styles.contentContainer}>
-                        <div className={styles.section1}>
-                            <div className={styles.summaryTitle}>
-                                <h5 className="font-semibold" style={{ color: COLOR_PALETTE.blue }}>Summary</h5>
-                                <ContactInfo visibility={"hidden lg:flex"} />
-                            </div>
-                            <p className="mt-5" style={{ color: COLOR_PALETTE.dark }}>{infoPersonal.summaryText}</p>
-                        </div>
-                        <div className={styles.section2}>
-                            <ListOverlay dataType={"skills"} data={CV_LIST_DATA.skills} />
-                            <ListOverlay dataType={"experience"} data={CV_LIST_DATA.experience} />
-                        </div>
-                        <ListOverlay dataType={"education"} data={CV_LIST_DATA.education} />
-                    </div>
+                <div className="mt-8 lg:mt-10 lg:pl-10">
+                    <h1 style={{ color: COLOR_PALETTE.blue800 }} className=" font-bold text-center lg:text-left">{infoPersonal.name}</h1>
+                    <h5 style={{ color: COLOR_PALETTE.blue700 }} className="text-center lg:text-left">{infoPersonal.position}</h5>
+                </div>
+                <div className="flex items-center flex-col lg:flex-row gap-10 mt-10 lg:pl-10">
+                    <Image className="rounded-full" alt="Mustafa Zırhlı" src={"/myself.jpeg"} height={180} width={180} />
+                    <p className="flex text-justify">{infoPersonal.summaryText}</p>
+                </div>
+                <div className="mt-10 gap-5 lg:pl-10 flex flex-col">
+                    <Skills />
+                    <Experience data={EXPERIENCES.experience} />
                 </div>
             </div >
-            <Footer visibility={"lg:hidden"} />
+            <Footer />
         </>
     )
 }
