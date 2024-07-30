@@ -34,12 +34,9 @@ export default function Home() {
 }
 
 //PROJECTS
-// Projelerin görsellerini küçült ve hazırla
 // Her bir projenin (eğe varsa) birden fazla fotoğrafını yükle ve seçtiğinde dinamik olarak resmi değiştir. (alternatif resimler ana resmin altında küçük kutucuk şeklinde olacak.)
 // Projelerin her birinde kullanılan teknolojileri icon olarak veya yazı olarak alanlarında belirt.
-// Responsive design'ı hazırla.
-// Sayfa açılış ve kaydırışta animasyon ekle.
-// Animasyon işini About me ve homePage'e de uyarla.
+// github ve app linklerine icon ekle
 
 //LAST TASK
 // about page ve projects page'e animasyon ekle.

@@ -8,30 +8,28 @@ import { useEffect, useState } from "react"
 
 
 export default function Projects() {
-    const [filterTo, setFilterTo] = useState("mobile")
-    const mobileProjects = PROJECT_DATA.filter(item => item.categoryName === "HTML/CSS/Javascript" || item.categoryName === "React")
-    const webProjects = PROJECT_DATA.filter(item => item.categoryName === "React Native")
-
+    const [filterTo, setFilterTo] = useState("web")
+    const mobileProjects = PROJECT_DATA.filter(item => item.categoryName === "React Native")
+    const webProjects = PROJECT_DATA.filter(item => item.categoryName === "HTML/CSS/Javascript" || item.categoryName === "React")
     return (
-        <div className="w-full p-10">
+        <div className="w-full px-10 lg:px-20 py-10">
             <Breadcrumps />
             <ProjectFilter setFilterTo={setFilterTo} pickedFilter={filterTo} />
-            <div className="mt-8">
-                {
-                    filterTo === "mobile" &&
-                    mobileProjects.map(item => (
-                        <div key={item.categoryName} className="mt-5">
-                            <div>{item.categoryName}</div>
-                            <ProjectList projects={item.projects} />
-                        </div>
-                    ))
-                }
+            <div className="mt-8 lg:mt-10">
                 {
                     filterTo === "web" &&
                     webProjects.map(item => (
-                        <div key={item.categoryName} className="mt-5">
+                        <div key={item.categoryName} className="mt-10">
                             <div>{item.categoryName}</div>
-                            <ProjectList projects={item.projects} />
+                            <ProjectList projects={item.projects} category={filterTo} />
+                        </div>
+                    ))
+                    ||
+                    filterTo === "mobile" &&
+                    mobileProjects.map(item => (
+                        <div key={item.categoryName} className="mt-10">
+                            <div>{item.categoryName}</div>
+                            <ProjectList projects={item.projects} category={filterTo} />
                         </div>
                     ))
                 }

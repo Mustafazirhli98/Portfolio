@@ -1,10 +1,12 @@
 .itemContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    @apply flex-wrap lg:flex-nowrap
+    /* background-color: blue; */
+    @apply w-full flex justify-between flex-col lg:flex-row lg:flex-nowrap my-10 border lg:p-10
 }
 
 .itemContainer:nth-child(2n) {
-    flex-direction: row-reverse;
+    @apply lg:flex-row-reverse
+}
+
+.itemContainer:nth-child(2n) div:first-child {
+    @apply lg:pl-5
 }
