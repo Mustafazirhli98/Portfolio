@@ -7,7 +7,7 @@ export default function Skills() {
     return (
         <div>
             <h5 className="text-center lg:text-left font-bold border-b py-2" style={{ color: COLOR_PALETTE.blue900 }}>Skills</h5>
-            <div className="flex flex-wrap justify-between items-center py-5">
+            <div className="flex flex-wrap justify-between items-center py-5 gap-2">
                 <BorderedBox>
                     <IconJS />
                     <span className="skill">Javascript</span>
