@@ -1,12 +1,16 @@
 .itemContainer {
-    /* background-color: blue; */
-    @apply w-full flex justify-between flex-col lg:flex-row lg:flex-nowrap my-10 border lg:p-10
+    @apply w-full flex justify-between flex-col lg:flex-row lg:flex-nowrap my-16 lg:py-10 lg:px-10 text-justify;
+    @apply hover:shadow-2xl bg-gray-100 hover:bg-gray-50;
+    transition: all ease 0.2s;
 }
 
 .itemContainer:nth-child(2n) {
     @apply lg:flex-row-reverse
 }
 
-.itemContainer:nth-child(2n) div:first-child {
-    @apply lg:pl-5
+
+.itemContainer div:first-child {
+    @apply lg:pr-14;
+    @apply lg:pl-10;
+
 }
