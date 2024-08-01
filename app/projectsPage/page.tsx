@@ -15,7 +15,7 @@ export default function Projects() {
     const webProjects = PROJECT_DATA.filter(item => item.categoryName === "HTML/CSS/Javascript" || item.categoryName === "React")
     return (
         <>
-            <div className="w-full py-10 lg:px-20">
+            <div className="w-full py-10 px-4 lg:px-20">
                 <Breadcrumps />
                 <ProjectFilter setFilterTo={setFilterTo} pickedFilter={filterTo} />
                 <div className="mt-5 lg:mt-10">

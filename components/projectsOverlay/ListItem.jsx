@@ -39,7 +39,7 @@ export default function ProjectCard({ projectData, category }) {
                                     src={item}
                                     width={70}
                                     height={100}
-                                    className="cursor-pointer border-2 max-w-[40px] lg:max-h-[70px] lg:max-w-[100px]" />
+                                    className="cursor-pointer border-2 max-w-[50px] lg:max-h-[70px] lg:max-w-[100px]" />
                             ))
                         )
                     }
