@@ -15,23 +15,23 @@ export default function Projects() {
     const webProjects = PROJECT_DATA.filter(item => item.categoryName === "HTML/CSS/Javascript" || item.categoryName === "React")
     return (
         <>
-            <div className="w-full px-10 lg:px-20 py-10">
+            <div className="w-full py-10 lg:px-20">
                 <Breadcrumps />
                 <ProjectFilter setFilterTo={setFilterTo} pickedFilter={filterTo} />
-                <div className="mt-8 lg:mt-10">
+                <div className="mt-5 lg:mt-10">
                     {
                         filterTo === "web" &&
                         webProjects.map(item => (
-                            <div key={item.categoryName} className="mt-10">
-                                <h1 style={{ color: COLOR_PALETTE.blue800 }} className="font-extrabold border-b py-5">{item.categoryName}</h1>
+                            <div key={item.categoryName}>
+                                <h1 style={{ color: COLOR_PALETTE.blue800 }} className="text-center lg:text-left font-extrabold border-b py-5">{item.categoryName}</h1>
                                 <ProjectList projects={item.projects} category={filterTo} />
                             </div>
                         ))
                         ||
                         filterTo === "mobile" &&
                         mobileProjects.map(item => (
-                            <div key={item.categoryName} className="mt-10">
-                                <h1 style={{ color: COLOR_PALETTE.blue800 }} className="font-extrabold border-b py-5">{item.categoryName}</h1>
+                            <div key={item.categoryName}>
+                                <h1 style={{ color: COLOR_PALETTE.blue800 }} className="text-center lg:text-left font-extrabold border-b py-5">{item.categoryName}</h1>
                                 <ProjectList projects={item.projects} category={filterTo} />
                             </div>
                         ))

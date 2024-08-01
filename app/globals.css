@@ -20,7 +20,7 @@
 
     p {
         @apply text-sm lg:text-base;
-        @apply text-[#282521]
+        @apply text-[#282521] hyphens-auto;
     }
 
     span.skill {

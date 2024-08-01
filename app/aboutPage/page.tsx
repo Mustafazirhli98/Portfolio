@@ -10,7 +10,7 @@ import Experience from "../../components/list/Experience";
 export default function AboutMe() {
     return (
         <>
-            <div className="w-full px-10 lg:px-20 py-10" style={{ backgroundColor: COLOR_PALETTE.white }}>
+            <div className="w-full p-10 lg:px-20" style={{ backgroundColor: COLOR_PALETTE.white }}>
                 <Breadcrumps />
                 <div className="mt-8 lg:mt-10 ">
                     <h1 style={{ color: COLOR_PALETTE.blue800 }} className=" font-bold text-center lg:text-left">{infoPersonal.name}</h1>
