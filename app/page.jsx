@@ -34,9 +34,9 @@ export default function Home() {
 }
 
 //PROJECTS
-// Her bir projenin (eğe varsa) birden fazla fotoğrafını yükle ve seçtiğinde dinamik olarak resmi değiştir. (alternatif resimler ana resmin altında küçük kutucuk şeklinde olacak.)
+// mobile tasarımları iyileştir.
 // Projelerin her birinde kullanılan teknolojileri icon olarak veya yazı olarak alanlarında belirt.
-// github ve app linklerine icon ekle
+
 
 //LAST TASK
 // about page ve projects page'e animasyon ekle.
