@@ -1,5 +1,5 @@
 .itemContainer {
-    @apply w-full flex justify-between flex-col lg:flex-row lg:flex-nowrap my-16 p-2 lg:p-10 text-justify gap-10 lg:gap-0;
+    @apply w-full flex justify-between flex-col lg:flex-row lg:flex-nowrap my-16 px-2 py-5 lg:p-10 text-justify gap-10 lg:gap-0;
     @apply shadow-xl lg:shadow-none hover:shadow-2xl lg:bg-gray-100 hover:bg-gray-50;
     transition: all ease 0.2s;
     word-spacing: 0.001em;
