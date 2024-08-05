@@ -75,7 +75,7 @@
     }
 
     .tracker-arrow {
-        @apply w-14 h-14;
+        @apply w-14 h-14 text-[var(--blue800)];
         @apply invisible lg:visible;
         @apply absolute top-[50%] translate-x-[-50%] translate-y-[-50%];
     }

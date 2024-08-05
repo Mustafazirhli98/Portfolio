@@ -1,5 +1,3 @@
-import COLOR_PALETTE from "../../lib/constants/colorPalette";
-
 export default function Experience({ data }) {
     return (
         <div>

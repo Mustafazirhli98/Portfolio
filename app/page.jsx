@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ContentOverview from "./../components/content/ContentOverview"
-import COLOR_PALETTE from "../lib/constants/colorPalette";
 
 export default function Home() {
 
@@ -24,10 +23,10 @@ export default function Home() {
 
   return (
     <div className="container">
-      <ContentOverview type={"About me"} link={"/aboutPage"} title={"AboutMe"} textColor={COLOR_PALETTE.white}/>
-      <ContentOverview type={"Projects"} link={"/projectsPage"} title={"Projects"} textColor={COLOR_PALETTE.white} />
+      <ContentOverview type={"About me"} link={"/aboutPage"} title={"AboutMe"} />
+      <ContentOverview type={"Projects"} link={"/projectsPage"} title={"Projects"} />
       <MdKeyboardArrowRight className="tracker-arrow"
-        style={{ transform: `rotate(${angle}deg)`, color: COLOR_PALETTE.blue800 }}
+        style={{ transform: `rotate(${angle}deg)` }}
       />
     </div>
   );
