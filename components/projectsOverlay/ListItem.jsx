@@ -1,10 +1,9 @@
 import Image from "next/image";
 import styles from "./project.module.css"
-import COLOR_PALETTE from "../../lib/constants/colorPalette";
 import { useState } from "react";
 import Links from "./Links"
 
-export default function ProjectCard({ projectData, category }) {
+export default function ProjectCard({ projectData, tech }) {
     const [currentImage, setCurrentImage] = useState(projectData._img)
 
     const changeCurrentImage = (nextImage) => {
@@ -13,24 +12,24 @@ export default function ProjectCard({ projectData, category }) {
 
     return (
         <div className={styles.itemContainer}>
-            <div className="lg:w-[50%] flex flex-col gap-3 lg:gap-10">
-                <h5 style={{ color: COLOR_PALETTE.blue700 }} className="font-semibold">{projectData._name}</h5>
-                <div className="flex flex-col h-full justify-between">
+            <div className={styles.descriptionContainer}>
+                <h5>{projectData._name}</h5>
+                <div className={styles.info}>
                     <p>{projectData.description}</p>
                     <Links projectData={projectData} visibleDevice={"lg"} />
                 </div>
             </div>
-            <div className={`flex gap-4 lg:justify-center
-             ${category === "mobile" && "flex-row lg:flex-col lg:items-center lg:w-[50%]"}
-             ${category === "web" && "flex-col"}
+            <div className={`${styles.previewContainer}
+             ${tech === "mobile" && styles.previewContainerMobileTech}
+             ${tech === "web" && styles.previewContainerWebTech}
              `}>
                 <Image
                     alt={projectData._name}
-                    width={category === "web" ? 700 : 200}
-                    height={category === "mobile" ? 300 : 200}
-                    className={`${category === "web" ? "lg:max-h-[300px]" : "max-h-[350px] max-w-[170px] lg:max-h-[400px] lg:max-w-[300]"}`}
+                    width={tech === "web" ? 700 : 200}
+                    height={tech === "mobile" ? 300 : 200}
+                    className={`${tech === "web" ? styles.previewImageWeb : styles.previewImageMobile}`}
                     src={currentImage} />
-                <div className={"flex flex-wrap gap-4 lg:pt-5"}>
+                <div className={styles.subImagesContainer}>
                     {
                         projectData._subImages && (
                             projectData._subImages.map(item => (
@@ -41,9 +40,9 @@ export default function ProjectCard({ projectData, category }) {
                                     src={item}
                                     width={90}
                                     height={100}
-                                    className={`cursor-pointer border-2 
-                                    ${category === "web" ? "max-w-[60px] lg:max-w-[100px]" :
-                                            "max-w-[60px] max-h-[70px] lg:max-h-[90px] lg:max-w-[50px]"
+                                    className={`${styles.subImages} 
+                                    ${tech === "web" ? styles.subImagesWebTech :
+                                            styles.subImagesMobileTech
                                         }`} />
                             ))
                         )

@@ -3,18 +3,18 @@ import COLOR_PALETTE from "../../lib/constants/colorPalette";
 export default function Experience({ data }) {
     return (
         <div>
-            <h5 className="text-center font-bold border-b lg:text-left py-2" style={{ color: COLOR_PALETTE.blue800 }}>Experience</h5>
+            <h3 className="text-center font-bold border-b lg:text-left py-2">Experience</h3>
             <div>
                 {
                     data.map(experience => (
-                        <ol key={experience.id} className="experienceList py-5"
+                        <div key={experience.id} className="experienceList py-5"
                         >
-                            <li className="font-semibold text-lg" style={{ color: COLOR_PALETTE.blue700 }}>
+                            <h4 className="font-semibold text-lg">
                                 {experience.position}
-                            </li>
-                            <li className="font-semibold text-md" style={{ color: COLOR_PALETTE.blue600 }}>{experience.company}</li>
-                            <li className="text-sm" style={{ color: COLOR_PALETTE.dark }}>{experience.description}</li>
-                        </ol>
+                            </h4>
+                            <h5 className="font-semibold text-md">{experience.company}</h5>
+                            <p>{experience.description}</p>
+                        </div>
                     ))
                 }
             </div>

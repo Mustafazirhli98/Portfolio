@@ -8,7 +8,7 @@ export default function Breadcrumps() {
     const pathname = usePathname();
 
     return (
-        <ul className={`${styles.breadcrumps}`}>
+        <ul className={styles.breadcrumps}>
             <li>
                 <Link href={"/"}>Home</Link>
             </li>

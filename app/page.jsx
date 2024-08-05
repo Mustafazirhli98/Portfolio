@@ -23,9 +23,9 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="root-container" style={{ backgroundColor: COLOR_PALETTE.light }}>
-      <ContentOverview type={"About me"} link={"/aboutPage"} boxColor={COLOR_PALETTE.blue100} textColor={COLOR_PALETTE.white}/>
-      <ContentOverview type={"Projects"} link={"/projectsPage"} boxColor={COLOR_PALETTE.blue400} textColor={COLOR_PALETTE.white} />
+    <div className="container">
+      <ContentOverview type={"About me"} link={"/aboutPage"} title={"AboutMe"} textColor={COLOR_PALETTE.white}/>
+      <ContentOverview type={"Projects"} link={"/projectsPage"} title={"Projects"} textColor={COLOR_PALETTE.white} />
       <MdKeyboardArrowRight className="tracker-arrow"
         style={{ transform: `rotate(${angle}deg)`, color: COLOR_PALETTE.blue800 }}
       />
@@ -33,11 +33,6 @@ export default function Home() {
   );
 }
 
-//PROJECTS
-// mobile tasarımları iyileştir.
-// Projelerin her birinde kullanılan teknolojileri icon olarak veya yazı olarak alanlarında belirt.
-
 
 //LAST TASK
 // about page ve projects page'e animasyon ekle.
-// refactoring

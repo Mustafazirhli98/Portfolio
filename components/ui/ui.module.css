@@ -1,5 +1,5 @@
+/* BreadCrumps.jsx */
 .breadcrumps {
-    color: #0d1d43;
     @apply text-center lg:text-right
 }
 
@@ -9,14 +9,12 @@
     position: relative;
 }
 
-
 .breadcrumps li::after {
     content: "/";
-    color: #353535;
+    color: var(--dark-light);
     position: absolute;
     right: -7px;
 }
-
 
 .breadcrumps li:last-child::after {
     content: "";
@@ -24,5 +22,16 @@
 
 .activeLink {
     text-decoration: underline;
-    color: #163072
+    color: var(--blue700)
+}
+
+/*Footer.jsx  */
+
+.footerContainer {
+    @apply flex justify-center items-center h-20 gap-10;
+    @apply bg-[var(--blue900)] text-[var(--light)]
+}
+
+.footerLink {
+    @apply text-[var(--white)] hover:text-[var(--blue100)]
 }

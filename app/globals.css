@@ -8,19 +8,57 @@
     padding: 0;
 }
 
+:root {
+    --blue50: #e9ecf6;
+    --blue100: #bac5e2;
+    --blue200: #98a9d3;
+    --blue300: #6982bf;
+    --blue400: #4c69b3;
+    --blue500: #1f44a0;
+    --blue600: #1c3e92;
+    --blue700: #163072;
+    --blue800: #112558;
+    --blue900: #0d1d43;
+    --light: #FBFCFF;
+    --dark: #282521;
+    --dark-light: #353535;
+
+}
+
 
 @layer base {
+
+    body {
+        @apply bg-[var(--light)]
+    }
+
     h1 {
-        @apply text-2xl lg:text-4xl
+        @apply text-2xl lg:text-4xl;
+        @apply text-[var(--blue800)]
+    }
+
+    h3 {
+        @apply text-xl;
+        @apply text-[var(--blue700)]
+    }
+
+    h4 {
+        @apply font-semibold text-lg;
+        @apply text-[var(--blue600)]
     }
 
     h5 {
-        @apply text-lg lg:text-xl
+        @apply font-semibold;
+        @apply text-[var(--blue500)]
     }
 
     p {
         @apply text-sm lg:text-base;
-        @apply text-[#282521] hyphens-auto;
+        @apply text-[var(--dark)] hyphens-auto;
+    }
+
+    li {
+        @apply text-[var(--blue700)]
     }
 
     span.skill {
@@ -31,8 +69,9 @@
 @layer components {
 
     /* app segment page styles */
-    .root-container {
+    .container {
         @apply h-screen flex flex-col lg:flex-row justify-center;
+        @apply bg-[var(--light)]
     }
 
     .tracker-arrow {

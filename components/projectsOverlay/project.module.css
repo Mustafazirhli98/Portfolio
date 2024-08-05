@@ -1,3 +1,5 @@
+/* ListItem.jsx */
+
 .itemContainer {
     @apply w-full flex justify-between flex-col lg:flex-row lg:flex-nowrap my-16 px-2 py-5 lg:p-10 text-justify gap-10 lg:gap-0;
     @apply shadow-xl lg:shadow-none hover:shadow-2xl lg:bg-gray-100 hover:bg-gray-50;
@@ -17,7 +19,77 @@
     @apply lg:border-r lg:mr-5
 }
 
-.itemContainer div:first-child {
+.descriptionContainer {
     @apply lg:pr-14;
     @apply lg:pl-10;
+    @apply lg:w-[50%] flex flex-col gap-3 lg:gap-10
+}
+
+.info {
+    @apply flex flex-col h-full justify-between
+}
+
+.previewContainer {
+    @apply flex gap-4 lg:justify-center
+}
+
+.previewContainerMobileTech {
+    @apply flex-row lg:flex-col lg:items-center lg:w-[50%]
+}
+
+.previewContainerWebTech {
+    @apply flex-col
+}
+
+.previewImageWeb {
+    @apply lg:max-h-[300px]
+}
+
+.previewImageMobile {
+    @apply max-h-[350px] max-w-[170px] lg:max-h-[370px] lg:max-w-[350]
+}
+
+.subImagesContainer {
+    @apply flex flex-wrap gap-4 lg:pt-5
+}
+
+.subImages {
+    @apply cursor-pointer border-2;
+}
+
+.subImagesWebTech {
+    @apply max-w-[60px] lg:max-w-[100px]
+}
+
+.subImagesMobileTech {
+    @apply max-w-[60px] max-h-[70px] lg:max-h-[90px] lg:max-w-[50px]
+}
+
+/* Links.jsx */
+
+.projectLinks {
+    @apply justify-center gap-20;
+    @apply text-[var(--blue200)]
+}
+
+.projectLink {
+    @apply hover:bg-gray-100 border px-10 py-2 rounded-xl
+}
+
+/* ProjectFilter.jsx */
+
+.filterContainer {
+    @apply flex justify-center items-center gap-8 lg:gap-20;
+    @apply mt-8 p-8
+}
+
+.filterItem {
+    @apply w-32 border-b shadow-lg text-center;
+    @apply hover:bg-[var(--blue50)];
+    @apply px-5 py-3 lg:px-6 lg:py-3;
+    @apply font-semibold text-xs lg:text-sm cursor-pointer
+}
+
+.pickedItem {
+    @apply bg-[var(--blue100)] hover:bg-[var(--blue100)];
 }

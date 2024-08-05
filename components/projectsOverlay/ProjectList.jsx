@@ -5,7 +5,7 @@ export default function ProjectList({ projects, category }) {
         <div className="flex flex-wrap">
             {
                 projects.map(item => (
-                    <ListItem key={item._id} projectData={item} category={category} />
+                    <ListItem key={item._id} projectData={item} tech={category} />
                 ))
             }
         </div>

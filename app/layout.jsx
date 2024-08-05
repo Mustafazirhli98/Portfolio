@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>Mustafa Zırhlı</title>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} root`}>{children}</body>
     </html>
   );
 }
