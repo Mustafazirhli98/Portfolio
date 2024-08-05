@@ -1,3 +1,5 @@
+"use client"
+
 import { infoPersonal } from "./../../lib/constants/InfoPersonal";
 import Breadcrumps from "../../components/ui/BreadCrumps";
 import Image from "next/image";
@@ -5,11 +7,17 @@ import { EXPERIENCES } from "../../lib/data/experienceData";
 import Footer from "./../../components/ui/Footer"
 import Skills from "../../components/list/Skills";
 import Experience from "../../components/list/Experience";
+import { useEffect, useState } from "react";
 
 export default function AboutMe() {
+    const [fadeEffect, setFadeEffect] = useState("fadeEffectHide")
+
+    useEffect(() => {
+        setFadeEffect("fadeEffectVisible")
+    }, [])
     return (
         <>
-            <div className="w-full p-10 lg:px-20">
+            <div className={`w-full p-10 lg:px-20 ${fadeEffect}`}>
                 <Breadcrumps />
                 <div className="mt-8 lg:mt-10 ">
                     <h1 className=" font-bold text-center lg:text-left">{infoPersonal.name}</h1>

@@ -35,4 +35,4 @@ export default function Home() {
 
 
 //LAST TASK
-// about page ve projects page'e animasyon ekle.
+// home,about page ve projects page'e animasyon ekle.

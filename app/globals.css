@@ -82,3 +82,12 @@
 
     /* app segment page styles */
 }
+
+.fadeEffectHide {
+    opacity: 0;
+}
+
+.fadeEffectVisible {
+    transition: all 1s;
+    opacity: 1;
+}

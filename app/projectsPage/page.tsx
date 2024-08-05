@@ -4,7 +4,7 @@ import PROJECT_DATA from "../../lib/data/projectData"
 import ProjectList from "../../components/projectsOverlay/ProjectList"
 import Breadcrumps from "../../components/ui/BreadCrumps"
 import ProjectFilter from "./../../components/projectsOverlay/ProjectFilter"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Footer from "../../components/ui/Footer"
 
 
@@ -12,6 +12,8 @@ export default function Projects() {
     const [filterTo, setFilterTo] = useState("web")
     const mobileProjects = PROJECT_DATA.filter(item => item.categoryName === "React Native")
     const webProjects = PROJECT_DATA.filter(item => item.categoryName === "HTML/CSS/Javascript" || item.categoryName === "React")
+    const [fadeEffect, setFadeEffect] = useState("fadeEffectHide")
+
     return (
         <>
             <div className="w-full py-10 px-4 lg:px-20">
