@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./project.module.css"
 import { useState } from "react";
 import Links from "./Links"
+import gsap from "gsap";
 
 export default function ProjectCard({ projectData, tech }) {
     const [currentImage, setCurrentImage] = useState(projectData._img)
@@ -11,7 +12,7 @@ export default function ProjectCard({ projectData, tech }) {
     }
 
     return (
-        <div className={styles.itemContainer}>
+        <div id={projectData._name} className={styles.itemContainer}>
             <div className={styles.descriptionContainer}>
                 <h5>{projectData._name}</h5>
                 <div className={styles.info}>
@@ -24,6 +25,7 @@ export default function ProjectCard({ projectData, tech }) {
              ${tech === "web" && styles.previewContainerWebTech}
              `}>
                 <Image
+                    loading="eager"
                     alt={projectData._name}
                     width={tech === "web" ? 700 : 200}
                     height={tech === "mobile" ? 300 : 200}
@@ -34,6 +36,7 @@ export default function ProjectCard({ projectData, tech }) {
                         projectData._subImages && (
                             projectData._subImages.map(item => (
                                 <Image
+                                    loading="eager"
                                     onClick={() => changeCurrentImage(item)}
                                     key={item}
                                     alt="subImage"

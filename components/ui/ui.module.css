@@ -35,3 +35,12 @@
 .footerLink {
     @apply text-[var(--white)] hover:text-[var(--blue100)]
 }
+
+.scroller {
+    @apply cursor-pointer fixed top-[92%] left-[90%] lg:left-[96%] opacity-0;
+    @apply text-[var(--blue300)]
+}
+
+.scroller:hover {
+    opacity: 1 !important;
+}

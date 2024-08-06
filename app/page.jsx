@@ -1,10 +1,15 @@
 'use client'
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ContentOverview from "./../components/content/ContentOverview"
+import gsap from "gsap";
 
 export default function Home() {
+
+  useLayoutEffect(() => {
+    gsap.fromTo(".container", { opacity: 0 }, { opacity: 1, duration: 1.2 })
+  }, [])
 
   const [angle, setAngle] = useState(0)
   useEffect(() => {

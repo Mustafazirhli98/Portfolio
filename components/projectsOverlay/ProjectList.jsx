@@ -1,3 +1,4 @@
+import Image from "next/image"
 import ListItem from "./ListItem"
 
 export default function ProjectList({ projects, category }) {

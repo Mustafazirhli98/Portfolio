@@ -10,10 +10,10 @@ export default function Footer() {
             <Link className={styles.footerLink} href={infoPersonal.mailAdress} title="mustafazirhli98@gmail.com">
                 <IoMail style={{ width: 30, height: 30 }} />
             </Link>
-            <Link className={styles.footerLink} href={infoPersonal.linkednAdress} title="Go to Linkedn">
+            <Link className={styles.footerLink} target="_blank" href={infoPersonal.linkednAdress} title="Go to Linkedn">
                 <FaLinkedin style={{ width: 30, height: 30 }} />
             </Link>
-            <Link className={styles.footerLink} href={infoPersonal.githubAdress} title="Go to Github">
+            <Link className={styles.footerLink} target="_blank" href={infoPersonal.githubAdress} title="Go to Github">
                 <FaGithub style={{ width: 30, height: 30 }} />
             </Link>
         </div>
