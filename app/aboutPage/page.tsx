@@ -2,8 +2,7 @@
 
 import gsap from "gsap"
 import { useLayoutEffect } from "react"
-// import Breadcrumps from "../../components/ui/BreadCrumps"
-import Breadcrumps from "@/components/ui/BreadCrumps"
+import Breadcrumps from "../../components/ui/BreadCrumps"
 import { infoPersonal } from "../../lib/constants/InfoPersonal"
 import Image from "next/image"
 import Skills from "./../../components/list/Skills"

@@ -1,8 +1,7 @@
 "use client"
 
 import { useLayoutEffect, useState } from "react"
-// import Breadcrumps from "../../components/ui/BreadCrumps"
-import Breadcrumps from "@/components/ui/BreadCrumps"
+import Breadcrumps from "../../components/ui/BreadCrumps"
 import Footer from "../../components/ui/Footer"
 import PROJECT_DATA from "./../../lib/data/projectData"
 import ProjectFilter from "./../../components/projectsOverlay/ProjectFilter"
