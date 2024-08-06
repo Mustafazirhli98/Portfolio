@@ -14,14 +14,12 @@ const ScrollTop = () => {
             start: "top top",
             end: "bottom bottom",
             onUpdate: self => {
-                // Görünürlük ayarı
                 if (self.progress > 0.1) {
-                    gsap.to("#up", { opacity: 0.5, duration: 0.5 }); // autoAlpha kullanarak görünürlük ve opacity
+                    gsap.to("#up", { opacity: 0.5, duration: 0.5 }); 
                 } else {
                     gsap.to("#up", { opacity: 0, duration: 0.5 });
                 }
-                // Sayfanın en altına yaklaşıldığında y konumunu değiştirme
-                if (self.progress > 0.9) {
+                if (self.progress > 0.95) {
                     gsap.to("#up", { y: -88, duration: 0.5 });
                 } else {
                     gsap.to("#up", { y: 0, duration: 0.5 });
