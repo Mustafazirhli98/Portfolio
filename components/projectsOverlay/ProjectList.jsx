@@ -1,7 +1,6 @@
-import Image from "next/image"
 import ListItem from "./ListItem"
 
-export default function ProjectList({ projects, category }) {
+const ProjectList = ({ projects, category }) => {
     return (
         <div className="flex flex-wrap">
             {
@@ -12,3 +11,5 @@ export default function ProjectList({ projects, category }) {
         </div>
     )
 }
+
+export default ProjectList

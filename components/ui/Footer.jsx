@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { infoPersonal } from "../../lib/constants/InfoPersonal";
 import styles from "./ui.module.css"
 
-export default function Footer() {
+const Footer = () => {
     return (
         <div className={styles.footerContainer}>
             <Link className={styles.footerLink} href={infoPersonal.mailAdress} title="mustafazirhli98@gmail.com">
@@ -19,3 +19,5 @@ export default function Footer() {
         </div>
     )
 }
+
+export default Footer

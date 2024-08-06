@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import styles from "./project.module.css"
 
-export default function Links({ projectData, visibleDevice }) {
+const Links = ({ projectData, visibleDevice }) => {
     return (
         <div className={`${styles.projectLinks} ${visibleDevice === "lg" ? "hidden lg:flex" : "flex lg:hidden"}`}>
             <Link href={projectData._githubLink}
@@ -19,3 +19,5 @@ export default function Links({ projectData, visibleDevice }) {
         </div>
     )
 }
+
+export default Links

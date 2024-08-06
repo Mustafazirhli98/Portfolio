@@ -1,9 +1,11 @@
 'use client'
 
-import { useEffect, useLayoutEffect, useState } from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import gsap from "gsap"
+import { useEffect, useLayoutEffect, useState } from "react"
 import ContentOverview from "./../components/content/ContentOverview"
-import gsap from "gsap";
+import { MdKeyboardArrowRight } from "react-icons/md";
+
+
 
 export default function Home() {
 
@@ -36,7 +38,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-//LAST TASK
-// home,about page ve projects page'e animasyon ekle.

@@ -1,4 +1,4 @@
-export default function Experience({ data }) {
+const Experience = ({ data }) => {
     return (
         <div>
             <h3 className="text-center font-bold border-b lg:text-left py-2">Experience</h3>
@@ -19,3 +19,5 @@ export default function Experience({ data }) {
         </div >
     )
 }
+
+export default Experience

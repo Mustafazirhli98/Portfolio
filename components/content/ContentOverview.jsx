@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./content.module.css"
 
-export default function ContentOverview({ type, link, title }) {
+const ContentOverview = ({ type, link, title }) => {
 
     return (
         <div className={styles.container} >
@@ -12,3 +12,5 @@ export default function ContentOverview({ type, link, title }) {
     )
 
 }
+
+export default ContentOverview

@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./ui.module.css"
 import { usePathname } from "next/navigation";
 
-export default function Breadcrumps() {
+const Breadcrumps = () => {
     const pathname = usePathname();
 
     return (
@@ -21,3 +21,5 @@ export default function Breadcrumps() {
         </ul >
     )
 }
+
+export default Breadcrumps

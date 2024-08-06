@@ -1,7 +1,7 @@
 import { IconBootstrap, IconCSS, IconHTML, IconJS, IconNext, IconReact, IconReactNative, IconTailwind, IconTS } from "../ui/svg/index"
 import BorderedBox from "./BorderedBox"
 
-export default function Skills() {
+const Skills = () => {
 
     return (
         <div>
@@ -47,3 +47,5 @@ export default function Skills() {
         </div>
     )
 }
+
+export default Skills

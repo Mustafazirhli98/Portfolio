@@ -1,14 +1,14 @@
 "use client"
 
-import { infoPersonal } from "./../../lib/constants/InfoPersonal";
-import Breadcrumps from "../../components/ui/BreadCrumps";
-import Image from "next/image";
-import { EXPERIENCES } from "../../lib/data/experienceData";
-import Footer from "./../../components/ui/Footer"
-import Skills from "../../components/list/Skills";
-import Experience from "../../components/list/Experience";
-import gsap from "gsap";
-import { useLayoutEffect } from "react";
+import gsap from "gsap"
+import { useLayoutEffect } from "react"
+import Breadcrumps from "../../components/ui/BreadCrumps"
+import { infoPersonal } from "../../lib/constants/InfoPersonal"
+import Image from "next/image"
+import Skills from "./../../components/list/Skills"
+import Experience from "./../../components/list/Experience"
+import { EXPERIENCES } from "./../../lib/data/experienceData"
+import Footer from "../../components/ui/Footer"
 
 export default function AboutMe() {
 

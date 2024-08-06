@@ -1,13 +1,13 @@
 "use client"
 
-import PROJECT_DATA from "../../lib/data/projectData"
-import ProjectList from "../../components/projectsOverlay/ProjectList"
-import Breadcrumps from "../../components/ui/BreadCrumps"
-import ProjectFilter from "./../../components/projectsOverlay/ProjectFilter"
 import { useLayoutEffect, useState } from "react"
+import Breadcrumps from "../../components/ui/BreadCrumps"
 import Footer from "../../components/ui/Footer"
-import gsap from "gsap"
+import PROJECT_DATA from "./../../lib/data/projectData"
+import ProjectFilter from "./../../components/projectsOverlay/ProjectFilter"
+import ProjectList from "./../../components/projectsOverlay/ProjectList"
 import ScrollTop from "./../../components/ui/ScrollTop"
+import gsap from "gsap"
 
 
 export default function Projects() {

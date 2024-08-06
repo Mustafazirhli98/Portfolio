@@ -2,9 +2,8 @@ import Image from "next/image";
 import styles from "./project.module.css"
 import { useState } from "react";
 import Links from "./Links"
-import gsap from "gsap";
 
-export default function ProjectCard({ projectData, tech }) {
+const ListItem = ({ projectData, tech }) => {
     const [currentImage, setCurrentImage] = useState(projectData._img)
 
     const changeCurrentImage = (nextImage) => {
@@ -56,3 +55,5 @@ export default function ProjectCard({ projectData, tech }) {
         </div>
     )
 }
+
+export default ListItem
