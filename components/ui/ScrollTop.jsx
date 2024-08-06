@@ -3,7 +3,7 @@ import styles from "./ui.module.css"
 import gsap from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin"
 import { ScrollTrigger } from "gsap/all";
-import { useEffect, useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger)
 
@@ -15,7 +15,7 @@ const ScrollTop = () => {
             end: "bottom bottom",
             onUpdate: self => {
                 if (self.progress > 0.1) {
-                    gsap.to("#up", { opacity: 0.5, duration: 0.5 }); 
+                    gsap.to("#up", { opacity: 0.5, duration: 0.5 });
                 } else {
                     gsap.to("#up", { opacity: 0, duration: 0.5 });
                 }
