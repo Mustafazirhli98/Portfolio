@@ -7,7 +7,7 @@ import ProjectList from "@/components/projectsOverlay/ProjectList"
 import ScrollTop from "@/components/ui/ScrollTop"
 import Footer from "@/components/ui/Footer"
 
-import { useLayoutEffect, useState } from "react"
+import { useEffect, useLayoutEffect, useState } from "react"
 import gsap from "gsap"
 //#endregion
 
@@ -17,8 +17,8 @@ export default function Projects() {
     const webProjects = PROJECT_DATA.filter(item => item.categoryName === "HTML/CSS/Javascript" || item.categoryName === "React")
     const [loaded, setLoaded] = useState("opacity-0")
 
-
     useLayoutEffect(() => {
+        window.scrollTo(0, 0)
         setLoaded("opacity-100")
         const tl = gsap.timeline()
         tl.fromTo("#project", { x: -20 }, { x: 0, duration: 1 })

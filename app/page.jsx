@@ -1,20 +1,21 @@
 'use client'
 
 import gsap from "gsap"
-import { useEffect, useLayoutEffect, useState } from "react"
+import { useCallback, useEffect, useLayoutEffect, useState } from "react"
 import ContentOverview from "./../components/content/ContentOverview"
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 
 
 export default function Home() {
+  const [angle, setAngle] = useState(0)
 
   useLayoutEffect(() => {
     gsap.fromTo(".container", { opacity: 0 }, { opacity: 1, duration: 1.2 })
   }, [])
 
-  const [angle, setAngle] = useState(0)
   useEffect(() => {
+
     const onRotate = (e) => {
       const centerX = window.innerWidth / 2;
       const centerY = window.innerHeight / 2;
@@ -29,12 +30,12 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="container">
-      <ContentOverview type={"About me"} link={"/aboutPage"} title={"AboutMe"} />
-      <ContentOverview type={"Projects"} link={"/projectsPage"} title={"Projects"} />
-      <MdKeyboardArrowRight className="tracker-arrow"
-        style={{ transform: `rotate(${angle}deg)` }}
-      />
-    </div>
+      <div className="container">
+        <ContentOverview type={"About me"} link={"/aboutPage"} title={"AboutMe"} />
+        <ContentOverview type={"Projects"} link={"/projectsPage"} title={"Projects"} />
+        <MdKeyboardArrowRight className="tracker-arrow"
+          style={{ transform: `rotate(${angle}deg)` }}
+        />
+      </div>
   );
 }
