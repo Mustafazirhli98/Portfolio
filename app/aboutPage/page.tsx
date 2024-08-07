@@ -1,7 +1,7 @@
 "use client"
 //#region imports
 import Breadcrumps from "@/components/ui/Breadcrumps"
-import { infoPersonal } from "lib/constants/InfoPersonal"
+import { infoPersonal } from "lib/constants/infoPersonal"
 import Skills from "@/components/list/Skills"
 import Experience from "@/components/list/Experience"
 import Footer from "@/components/ui/Footer"

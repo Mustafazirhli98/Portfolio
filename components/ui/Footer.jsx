@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { IoMail } from "react-icons/io5";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { infoPersonal } from "../../lib/constants/InfoPersonal";
+import { infoPersonal } from "../../lib/constants/infoPersonal";
 import styles from "./ui.module.css"
 
 const Footer = () => {
