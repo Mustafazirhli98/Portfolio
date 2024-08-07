@@ -70,7 +70,7 @@
 
     /* app segment page styles */
     .container {
-        @apply h-screen overflow-hidden flex flex-col lg:flex-row justify-center opacity-0;
+        @apply h-screen min-h-screen overflow-hidden flex flex-col lg:flex-row justify-center opacity-0;
         @apply bg-[var(--light)]
     }
 
