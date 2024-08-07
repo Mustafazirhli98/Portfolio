@@ -29,6 +29,7 @@ export default function Projects() {
         <>
             <div id="container" className={`w-full py-10 px-4 lg:px-20 ${loaded} transition-opacity duration-1000 ease-in-out`}>
                 <Breadcrumps />
+                <ScrollTop />
                 <ProjectFilter setFilterTo={setFilterTo} pickedFilter={filterTo} />
                 <div className="mt-5 lg:mt-10">
                     {
@@ -50,7 +51,6 @@ export default function Projects() {
                     }
                 </div>
             </div>
-            <ScrollTop />
             <Footer />
         </>
     )

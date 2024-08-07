@@ -8,13 +8,13 @@ const Footer = () => {
     return (
         <div className={styles.footerContainer}>
             <Link className={styles.footerLink} href={infoPersonal.mailAdress} title="mustafazirhli98@gmail.com">
-                <IoMail style={{ width: 30, height: 30 }} />
+                <IoMail style={{ width: 25, height: 25 }} />
             </Link>
             <Link className={styles.footerLink} target="_blank" href={infoPersonal.linkednAdress} title="Go to Linkedn">
-                <FaLinkedin style={{ width: 30, height: 30 }} />
+                <FaLinkedin style={{ width: 25, height: 25 }} />
             </Link>
             <Link className={styles.footerLink} target="_blank" href={infoPersonal.githubAdress} title="Go to Github">
-                <FaGithub style={{ width: 30, height: 30 }} />
+                <FaGithub style={{ width: 25, height: 25 }} />
             </Link>
         </div>
     )

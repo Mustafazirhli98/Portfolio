@@ -10,13 +10,19 @@ const Breadcrumps = () => {
     return (
         <ul className={styles.breadcrumps}>
             <li>
-                <Link href={"/"}>Home</Link>
+                <Link className={styles.inactiveLink} href={"/"}>Home</Link>
             </li>
-            <li className={pathname === "/aboutPage" ? styles.activeLink : ""}>
-                <Link href={"/aboutPage"}>About me</Link>
+            <li>
+                <Link href={"/aboutPage"}
+                    className={pathname === "/aboutPage" ? styles.activeLink : styles.inactiveLink} >
+                    About me
+                </Link>
             </li>
-            <li className={pathname === "/projectsPage" ? styles.activeLink : ""}>
-                <Link href={"/projectsPage"}>Projects</Link>
+            <li>
+                <Link href={"/projectsPage"}
+                    className={pathname === "/projectsPage" ? styles.activeLink : styles.inactiveLink}
+                >Projects
+                </Link>
             </li>
         </ul >
     )

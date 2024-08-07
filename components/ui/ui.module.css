@@ -25,6 +25,10 @@
     color: var(--blue700)
 }
 
+.inactiveLink {
+    color: var(--blue400)
+}
+
 /*Footer.jsx  */
 
 .footerContainer {
@@ -37,10 +41,10 @@
 }
 
 .scroller {
-    @apply cursor-pointer fixed top-[92%] left-[90%] lg:left-[96%] opacity-0;
-    @apply text-[var(--blue300)]
+    @apply cursor-pointer fixed top-[85%] left-[90%] lg:left-[96%] opacity-0;
+    @apply text-[var(--blue300)] z-50
 }
 
-.scroller:hover {
+.scroller:active {
     opacity: 1 !important;
 }

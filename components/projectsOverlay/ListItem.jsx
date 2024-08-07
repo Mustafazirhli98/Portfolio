@@ -23,24 +23,27 @@ const ListItem = ({ projectData, tech }) => {
              ${tech === "mobile" && styles.previewContainerMobileTech}
              ${tech === "web" && styles.previewContainerWebTech}
              `}>
-                <Image
-                    loading="eager"
-                    alt={projectData._name}
-                    width={tech === "web" ? 700 : 200}
-                    height={tech === "mobile" ? 300 : 200}
-                    className={`${tech === "web" ? styles.previewImageWeb : styles.previewImageMobile}`}
-                    src={currentImage} />
+                <div className={`${tech === "web" ? styles.imageWrapperWeb : styles.imageWrapperMobile}`}>
+                    <Image
+                        loading="eager"
+                        alt={projectData._name}
+                        width={tech === "web" ? 700 : 200}
+                        height={tech === "mobile" ? 400 : 200}
+                        src={currentImage}
+                        className={tech === "mobile" && "max-w-[200px] lg:max-w-[600px]"}
+                    />
+                </div>
                 <div className={styles.subImagesContainer}>
                     {
                         projectData._subImages && (
                             projectData._subImages.map(item => (
                                 <Image
+                                    key={item}
                                     loading="eager"
                                     onClick={() => changeCurrentImage(item)}
-                                    key={item}
                                     alt="subImage"
                                     src={item}
-                                    width={90}
+                                    width={70}
                                     height={100}
                                     className={`${styles.subImages} 
                                     ${tech === "web" ? styles.subImagesWebTech :
@@ -52,7 +55,7 @@ const ListItem = ({ projectData, tech }) => {
                 </div>
             </div>
             <Links projectData={projectData} visibleDevice={"sm"} />
-        </div>
+        </div >
     )
 }
 

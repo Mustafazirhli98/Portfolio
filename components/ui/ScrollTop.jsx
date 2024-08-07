@@ -19,11 +19,6 @@ const ScrollTop = () => {
                 } else {
                     gsap.to("#up", { opacity: 0, duration: 0.5 });
                 }
-                if (self.progress > 0.95) {
-                    gsap.to("#up", { y: -88, duration: 0.5 });
-                } else {
-                    gsap.to("#up", { y: 0, duration: 0.5 });
-                }
             },
         });
     }, []);
