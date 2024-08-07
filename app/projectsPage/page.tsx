@@ -1,14 +1,15 @@
 "use client"
+//#region imports
+import PROJECT_DATA from "lib/data/projectData"
+import Breadcrumps from "@/components/ui/Breadcrumps"
+import ProjectFilter from "@/components/projectsOverlay/ProjectFilter"
+import ProjectList from "@/components/projectsOverlay/ProjectList"
+import ScrollTop from "@/components/ui/ScrollTop"
+import Footer from "@/components/ui/Footer"
 
 import { useLayoutEffect, useState } from "react"
-import Breadcrumps from "../../components/ui/BreadCrumps"
-import Footer from "../../components/ui/Footer"
-import PROJECT_DATA from "./../../lib/data/projectData"
-import ProjectFilter from "./../../components/projectsOverlay/ProjectFilter"
-import ProjectList from "./../../components/projectsOverlay/ProjectList"
-import ScrollTop from "./../../components/ui/ScrollTop"
 import gsap from "gsap"
-
+//#endregion
 
 export default function Projects() {
     const [filterTo, setFilterTo] = useState("web")

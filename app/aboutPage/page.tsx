@@ -1,14 +1,16 @@
 "use client"
+//#region imports
+import Breadcrumps from "@/components/ui/Breadcrumps"
+import { infoPersonal } from "lib/constants/InfoPersonal"
+import Skills from "@/components/list/Skills"
+import Experience from "@/components/list/Experience"
+import Footer from "@/components/ui/Footer"
+import { EXPERIENCES } from "lib/data/experienceData"
 
 import gsap from "gsap"
 import { useLayoutEffect } from "react"
-import Breadcrumps from "../../components/ui/BreadCrumps"
-import { infoPersonal } from "../../lib/constants/InfoPersonal"
 import Image from "next/image"
-import Skills from "./../../components/list/Skills"
-import Experience from "./../../components/list/Experience"
-import { EXPERIENCES } from "./../../lib/data/experienceData"
-import Footer from "../../components/ui/Footer"
+//#endregion
 
 export default function AboutMe() {
 
