@@ -23,14 +23,15 @@ const ListItem = ({ projectData, tech }) => {
              ${tech === "mobile" && styles.previewContainerMobileTech}
              ${tech === "web" && styles.previewContainerWebTech}
              `}>
-                <div className={`${tech === "web" ? styles.imageWrapperWeb : styles.imageWrapperMobile}`}>
+                <div className={`${tech === "web" ? styles.imageWrapperWeb : styles.imageWrapperMobile} ${styles.aspectSM} lg:${styles.aspectLG}`}>
                     <Image
                         loading="eager"
                         alt={projectData._name}
                         width={tech === "web" ? 700 : 200}
                         height={tech === "mobile" ? 400 : 200}
                         src={currentImage}
-                        className={tech === "mobile" && "max-w-[200px] lg:max-w-[600px]"}
+                        // className={tech === "mobile" && "max-w-[200px] lg:max-w-[600px]"}
+                        className={"max-h-[500px]"}
                     />
                 </div>
                 <div className={styles.subImagesContainer}>
@@ -46,6 +47,7 @@ const ListItem = ({ projectData, tech }) => {
                                     width={70}
                                     height={100}
                                     className={`${styles.subImages} 
+                                    ${item === currentImage && styles.pickedSubImg}
                                     ${tech === "web" ? styles.subImagesWebTech :
                                             styles.subImagesMobileTech
                                         }`} />
