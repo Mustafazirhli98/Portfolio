@@ -11,7 +11,7 @@ export default function Home() {
   const [angle, setAngle] = useState(0)
 
   useLayoutEffect(() => {
-    gsap.fromTo(".container", { opacity: 0 }, { opacity: 1, duration: 1.2 })
+    gsap.fromTo(".homeContainer", { opacity: 0 }, { opacity: 1, duration: 1.2 })
   }, [])
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export default function Home() {
   }, [])
 
   return (
-      <div className="container">
+      <div className="homeContainer">
         <ContentOverview type={"About me"} link={"/aboutPage"} title={"AboutMe"} />
         <ContentOverview type={"Projects"} link={"/projectsPage"} title={"Projects"} />
         <MdKeyboardArrowRight className="tracker-arrow"
