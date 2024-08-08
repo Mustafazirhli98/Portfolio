@@ -13,7 +13,7 @@ console.log(currentImage)
     return (
         <div id={projectData._name} className={styles.itemContainer}>
             <div className={styles.descriptionContainer}>
-                <h5>{projectData._name}</h5>
+                <h5 className="lg:text-lg">{projectData._name}</h5>
                 <div className={styles.info}>
                     <p>{projectData.description}</p>
                     <Links projectData={projectData} visibleDevice={"lg"} />
