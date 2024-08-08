@@ -70,7 +70,7 @@
 
     /* app segment page styles */
     .homeContainer {
-        @apply h-screen min-h-screen w-screen overflow-hidden flex flex-col lg:flex-row justify-center items-center ;
+        @apply h-screen min-h-screen w-screen overflow-hidden flex flex-col lg:flex-row justify-center lg:items-center ;
         @apply bg-[var(--light)]
     }
 
