@@ -12,7 +12,7 @@
 }
 
 .itemContainer:nth-child(2n) div:first-child {
-    @apply lg:border-l lg:ml-5
+    @apply lg:border-l lg:ml-5 lg:pr-4 
 }
 
 .itemContainer:nth-child(2n+1) div:first-child {
@@ -35,7 +35,7 @@
 }
 
 .previewContainerMobileTech {
-    @apply flex-col items-center lg:flex-row lg:items-center lg:w-[50%]
+    @apply flex-col items-center lg:flex-row lg:items-center flex-1
 }
 
 .previewContainerWebTech {
