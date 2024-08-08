@@ -12,7 +12,7 @@
 }
 
 .itemContainer:nth-child(2n) div:first-child {
-    @apply lg:border-l lg:ml-5 lg:pr-4 
+    @apply lg:border-l lg:ml-5 lg:pr-5
 }
 
 .itemContainer:nth-child(2n+1) div:first-child {
