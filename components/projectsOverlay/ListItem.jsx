@@ -6,10 +6,17 @@ import Links from "./Links"
 const ListItem = ({ projectData, tech }) => {
     const [currentImage, setCurrentImage] = useState(projectData._img)
 
+    let subImagesBorder;
+    if (projectData._subImages && tech === "web") {
+        subImagesBorder = styles.WebSubImagesBorder
+    } if (projectData && tech === "mobile") {
+        subImagesBorder = styles.mobileSubImagesBorder
+    }
+
     const changeCurrentImage = (nextImage) => {
         setCurrentImage(nextImage)
     }
-console.log(currentImage)
+    console.log(currentImage)
     return (
         <div id={projectData._name} className={styles.itemContainer}>
             <div className={styles.descriptionContainer}>
@@ -33,7 +40,7 @@ console.log(currentImage)
                         className={"max-h-[500px]"}
                     />
                 </div>
-                <div className={styles.subImagesContainer}>
+                <div className={`${styles.subImagesContainer} ${subImagesBorder}`}>
                     {
                         projectData._subImages && (
                             projectData._subImages.map(item => (
