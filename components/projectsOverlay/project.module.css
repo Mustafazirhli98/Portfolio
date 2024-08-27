@@ -11,10 +11,6 @@
     @apply lg:flex-row-reverse
 }
 
-.itemContainer:nth-child(2n) div {
-    @apply lg:pr-5
-}
-
 .itemContainer:nth-child(2n+1) div:first-child {
     @apply lg:mr-5
 }
@@ -35,7 +31,7 @@
 }
 
 .previewContainerMobileTech {
-    @apply flex-col items-center lg:flex-row lg:items-center flex-1
+    @apply flex-col lg:flex-row lg:items-center flex-1
 }
 
 .previewContainerWebTech {
@@ -47,15 +43,14 @@
     position: relative;
     overflow: hidden;
     aspect-ratio: 16/8;
-
 }
 
 .imageWrapperMobile {
-    @apply flex lg:justify-center max-h-[420px];
+    @apply flex lg:justify-center max-h-[420px] justify-center;
 }
 
 .subImagesContainer {
-    @apply flex flex-wrap gap-2 
+    @apply flex flex-wrap gap-2
 }
 
 .mobileSubImagesBorder {
