@@ -11,12 +11,12 @@
     @apply lg:flex-row-reverse
 }
 
-.itemContainer:nth-child(2n) div:first-child {
-    @apply lg:border-l lg:ml-5 lg:pr-5
+.itemContainer:nth-child(2n) div {
+    @apply lg:pr-5
 }
 
 .itemContainer:nth-child(2n+1) div:first-child {
-    @apply lg:border-r lg:mr-5
+    @apply lg:mr-5
 }
 
 .descriptionContainer {
@@ -46,7 +46,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/8;
 
 }
 
@@ -55,7 +55,7 @@
 }
 
 .subImagesContainer {
-    @apply flex flex-wrap gap-2 lg:pt-5
+    @apply flex flex-wrap gap-2 pt-2 lg:pt-5 border-t-2
 }
 
 .subImages {

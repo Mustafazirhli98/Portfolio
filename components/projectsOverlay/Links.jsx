@@ -5,10 +5,14 @@ import styles from "./project.module.css"
 const Links = ({ projectData, visibleDevice }) => {
     return (
         <div className={`${styles.projectLinks} ${visibleDevice === "lg" ? "hidden lg:flex" : "flex lg:hidden"}`}>
-            <Link href={projectData._githubLink}
-                className={styles.projectLink} title="Go to Github" target="_blank">
-                <FaGithub size={visibleDevice === "sm" ? 20 : 25} />
-            </Link>
+            {
+                projectData._githubLink && (
+                    <Link href={projectData._githubLink}
+                        className={styles.projectLink} title="Go to Github" target="_blank">
+                        <FaGithub size={visibleDevice === "sm" ? 20 : 25} />
+                    </Link>
+                )
+            }
             {projectData._appLink && (
                 <Link href={projectData._appLink}
                     className={styles.projectLink}
